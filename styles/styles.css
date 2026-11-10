@@ -24,10 +24,10 @@ h1 {
 }
 
 main img {
-    width: 150px;
+    width: 180px;
     height: auto;
-    border: 1px solid #333;
-    padding: 2px;
+    border: 0px solid #eee;
+    padding: 0px;
     box-shadow: 0 0 10px gray;
 }
 
@@ -36,8 +36,8 @@ aside {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: #333;
+    color: #eee;
     text-align: center;
 }
 
