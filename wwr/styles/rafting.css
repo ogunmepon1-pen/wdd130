@@ -1,0 +1,202 @@
+/* CSS VARIABLES */
+
+:root {
+    --primary-color: #023047;
+    --secondary-color: #219ebc;
+    --accent1-color: #ffb703;
+    --accent2-color: #8ecae6;
+
+    --heading-font: Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    background-color: #f5faff;
+}
+
+/* HEADER, MAIN AND FOOTER */
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 15px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: var(--accent1-color);
+}
+
+/* HEADINGS */
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* GENERAL SPACING */
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* HERO SECTION */
+
+.hero {
+    position: relative;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    opacity: 0.9;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    opacity: 0.95;
+    padding: 15px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin: 0 0 10px 15px;
+    border: 2px solid white;
+}
+
+/* HISTORY SECTION */
+
+.history {
+    padding: 20px;
+    background-color: #eaf6fa;
+}
+
+.history h2 {
+    margin-bottom: 15px;
+}
+
+/* ADVENTURE SECTION */
+
+.adventure {
+    padding: 20px;
+}
+
+.adventure h2 {
+    margin-bottom: 20px;
+}
+
+.adventure-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.adventure-images figure {
+    width: 20%;
+    text-align: center;
+}
+
+.adventure-images img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+}
+
+.adventure-images figcaption {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+}
