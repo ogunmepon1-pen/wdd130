@@ -66,7 +66,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent1-color);
+    color: var(--secondary-color);
 }
 
 /* HEADINGS */
